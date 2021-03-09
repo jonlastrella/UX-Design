@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  padding: 20px 0;
+  background-color: #5c3bfe;
+}
+nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  color: whitesmoke;
+  position: relative;
+}
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.topnav {
+  display: none;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+.topnav a {
+  color: #1d1d1f;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  color: whitesmoke;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.topnav a:hover {
+  font-weight: bold;
+}
+.logo-container {
+  flex: 1;
+}
+.logo-container p {
+  font-weight: bold;
+  font-size: 44px;
+  color: whitesmoke;
+}
+/* hamburger */
+.line {
+  width: 17px;
+  height: 2px;
+  background-color: red;
+  margin: 5px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: none;
+}
+/* banner */
+.banner-container {
+  background-color: #5c3bfe;
+}
+.banner {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner h1 {
+  margin-top: 5%;
+  font-size: 110px;
+  color: whitesmoke;
+}
+.banner p {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-bottom: 10%;
+}
+.image-container img {
+  width: 100%;
+}
+/* projects */
+.project-container {
+  width: 70%;
+  margin: auto;
+}
+.my,
+.project-header p {
+  font-size: 82px;
+  font-weight: 600;
+  color: #5c3bfe;
+}
+.project-header {
+  padding: 70px 0;
+}
+.my {
+  color: #fff;
+  text-shadow: -1px -1px 0 #5c3bfe, 1px -1px 0 #5c3bfe, -1px 1px 0 #5c3bfe,
+    1px 1px 0 #5c3bfe;
+}
+.project {
+  margin-top: 80px;
+}
+.projects img,
+.finance img,
+.fashion img,
+.product img {
+  width: 50%;
+}
+.projects,
+.finance,
+.fashion,
+.product {
+  display: flex;
+}
+.project-info,
+.finance-info,
+.fashion-info,
+.product-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 100px;
+  width: 50%;
+}
+.project-info h1,
+.finance-info h1,
+.fashion h1,
+.product h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+.project-info p,
+.finance-info p,
+.fashion p,
+.product p {
+  margin: 30px 0;
+  color: #b9b9bd;
+}
+.project-info a,
+.finance-info a,
+.fashion-info a,
+.product-info a {
+  color: #5c3bfe;
+  border: 1px solid #5c3bfe;
+  padding: 10px 20px;
+}
+.project-info a:hover,
+.finance-info a:hover,
+.fashion-info a:hover,
+.product-info a:hover {
+  background-color: #5c3bfe;
+  color: whitesmoke;
+  font-weight: 600;
+}
+.view-all {
+  text-align: center;
+  margin: 80px 0;
+}
+.view-all a {
+  color: #5c3bfe;
+}
+.view-all a:hover {
+  opacity: 0.6;
+}
+/* why me */
+.why {
+  background-color: #5c3bfe;
+}
+.whyme {
+  width: 70%;
+  margin: auto;
+}
+.why-header p {
+  font-size: 82px;
+  color: whitesmoke;
+  padding: 70px 0;
+}
+.whyme ul {
+  display: flex;
+  justify-content: space-between;
+}
+.whyme ul li p {
+  font-size: 24px;
+  font-weight: 600;
+  color: whitesmoke;
+  padding-bottom: 70px;
+}
+.whyme ul li {
+  text-align: center;
+}
+.me {
+  color: #5c3bfe;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+}
+/* testimonial */
+.testimonial {
+  width: 70%;
+  margin: auto;
+}
+.testimonial h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 52px;
+  color: #5c3bfe;
+}
+/* contact */
+.contact-container {
+  background-color: #5c3bfe;
+}
+.contact {
+  width: 70%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-info {
+  padding: 70px 0;
+}
+.contact-info h1 {
+  color: whitesmoke;
+  font-size: 58px;
+  font-weight: 600;
+}
+.contact-info ul li a {
+  color: whitesmoke;
+  font-size: 24px;
+}
+.contact-info ul li {
+  padding: 10px 0;
+}
+.inspired h2 {
+  font-size: 44px;
+  width: 50%;
+  margin-left: auto;
+  color: Whitesmoke;
+  font-weight: 600;
+}
+.inspired {
+  display: flex;
+  align-items: center;
+}
+
+/* media queries */
+@media only screen and (max-width: 1250px) {
+  nav ul {
+    display: none;
+  }
+  .topnav {
+    display: contents;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .topnav {
+    display: contents;
+  }
+  .banner h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+  .banner p {
+    font-size: 26px;
+  }
+  .project-header {
+    text-align: center;
+  }
+  .projects,
+  .finance {
+    flex-direction: column-reverse;
+  }
+  .fashion,
+  .product {
+    flex-direction: column;
+  }
+  .projects img,
+  .project-info,
+  .fashion img,
+  .fashion-info,
+  .finance img,
+  .finance-info,
+  .product img,
+  .product-info {
+    width: 100%;
+  }
+  .button {
+    margin-bottom: 50px;
+  }
+  .why-header {
+    text-align: center;
+  }
+  .whyme ul li p {
+    font-size: 16px;
+  }
+  .inspired h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .banner-container h1 {
+    font-size: 50px;
+  }
+  .banner-container p {
+    font-size: 18px;
+  }
+  .project-header p,
+  .my {
+    font-size: 50px;
+  }
+  .project-info,
+  .finance-info,
+  .product-info,
+  .fashion-info {
+    padding: 0;
+  }
+  .project-info h1,
+  .finance-info h1,
+  .product-info h1,
+  .fashion-info h1,
+  .contact-info h1 {
+    font-size: 30px;
+  }
+  .whyme ul {
+    flex-direction: column;
+  }
+  .why-header p {
+    font-size: 50px;
+  }
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+  .inspired h2 {
+    width: 100%;
+  }
+  .testimonial h6 {
+    font-size: 42px;
+  }
+}
